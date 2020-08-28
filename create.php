@@ -45,7 +45,8 @@
    $putdata .= "<PRE>\n";
    $putdata .= "Body:   \n";
    $putdata .= htmlspecialchars($_POST['message']) . "\n";
-   $putdata .= "</PRE><!-- " . sha256(time() . "_X" . var_export($_SERVER,true) . "X_" ) . " -->\n";
+   $putdata .= "</PRE>";
+   //$putdata .= "<!-- " . sha256(time() . "_X" . htmlspecialchars(var_export($_SERVER,true)) . "X_" ) . " -->\n";
    $e = 86400;
    if (!empty($_POST['expire'])) {
         $e = 86400 * intval($_POST['expire']);
