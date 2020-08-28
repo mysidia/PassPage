@@ -86,7 +86,7 @@ $("#delete").click(function(e) {
   if ( confirm("Are you sure?") ) {
        $.ajax( {
 	         type: "POST",
-			 url: "a.php",
+			 url: "read.php",
 			 data: { f: getUrlParameter("f"), k: getUrlParameter("k"), d: "Delete Now" },
 			 success: function(ans) { document.body.innerHTML = ans; },
 			 error: function(ans) { alert("Deletion failed"); }
