@@ -1,6 +1,7 @@
 <?php
 /*
  * Copyright (C) Mysidia, 2015, All Rights Reserved
+ * + contains 3rd party hash source code for DES hashing
  *
  * Create Hashes.
  * Requires xzcvbn-c
